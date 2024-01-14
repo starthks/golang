@@ -1,5 +1,7 @@
 package earlygo
 
-func S24(){
-	
+import "fmt"
+
+func S24() {
+	fmt.Println("helo")
 }
