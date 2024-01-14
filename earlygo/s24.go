@@ -8,9 +8,9 @@ import (
 )
 
 func S24() {
-	fmt.Println(strings.Count("hello hey","he")) //2
+	fmt.Println(strings.Count("hello hey", "he")) //2
 	s := "hello heyyou bye"
-	in := strings.Index(s,"hey")
+	in := strings.Index(s, "hey")
 	fmt.Println(s[in:]) //heyyou bye
 
 	f := func(r rune) bool {
@@ -25,7 +25,12 @@ func S24() {
 
 	num1, _ := strconv.Atoi("100")
 	s1 := strconv.Itoa(100)
-	fmt.Printf("%#v\t %#v\n", num1, s1)
+	fmt.Printf("%#v\t %#v\n", num1, s1) //100      "100"
 
-	
+	var sb []byte = make([]byte, 0)
+	sb = strconv.AppendFloat(sb, 1.2, 'f', -1, 32)
+	sb = strconv.AppendInt(sb, 3, 10)
+	for _, v := range sb {
+		fmt.Printf("%c ", v) //1 . 2 3  
+	}
 }

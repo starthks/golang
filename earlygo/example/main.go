@@ -18,6 +18,7 @@ func main() {
 		eg.S21() // Scanf
 		eg.S22() // Fscanf
 		eg.S23() // utf8.RuneLen
+		eg.S24() //문자열
 	*/
-	eg.S24() //문자열
+	eg.S25() //정규표현식
 }
