@@ -15,6 +15,9 @@ func main() {
 	eg.S18() // atomic.AddInt32(&data, -1)
 	eg.S19() // reflect.TypeOf, reflect.ValueOf
 	eg.S20() // 동적함수
+	eg.S21() // Scanf
+	eg.S22() // Fscanf
+	eg.S23() // utf8.RuneLen
 	*/
-	eg.S21() //
+	eg.S24() //
 }
